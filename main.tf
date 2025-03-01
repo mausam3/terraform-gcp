@@ -39,8 +39,9 @@ resource "google_compute_instance" "jenkins_vm" {
 
   boot_disk {
     initialize_params {
-      image = "Debian GNU/Linux 11"  # Ubuntu 20.04 LTS
-    }
+      image = "debian-cloud/debian-11"
+      labels = {
+        my_label = "mausam"
   }
 
   network_interface {
