@@ -39,7 +39,7 @@ resource "google_compute_instance" "jenkins_vm" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-2004-focal-v20210119"  # Ubuntu 20.04 LTS
+      image = "Ubuntu 20.04 LTS"  # Ubuntu 20.04 LTS
     }
   }
 
