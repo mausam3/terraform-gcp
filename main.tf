@@ -39,7 +39,7 @@ resource "google_compute_instance" "jenkins_vm" {
 
   boot_disk {
     initialize_params {
-      image = "Ubuntu 20.04 LTS"  # Ubuntu 20.04 LTS
+      image = "Debian GNU/Linux 11"  # Ubuntu 20.04 LTS
     }
   }
 
