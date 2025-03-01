@@ -37,11 +37,13 @@ resource "google_compute_instance" "jenkins_vm" {
   machine_type = "n1-standard-1"   # Choose the machine type based on your requirements
   zone         = "us-central1-c"
 
-  boot_disk {
+ boot_disk {
     initialize_params {
       image = "debian-cloud/debian-11"
       labels = {
-        my_label = "mausam"
+        my_label = "value"
+      }
+    }
   }
 
   network_interface {
